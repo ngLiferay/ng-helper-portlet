@@ -1,0 +1,12 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.liferaying">
+	<namespace>ng_helper</namespace>
+	<entity name="NGServices" local-service="false" remote-service="true">
+	</entity>
+	
+	<entity name="JournalArticleServices" local-service="false" remote-service="true">
+		<reference package-path="com.liferay.portlet.journal" entity="JournalArticle" />
+		<reference package-path="com.liferay.portlet.journal" entity="JournalFolder" />
+	</entity>
+</service-builder>
